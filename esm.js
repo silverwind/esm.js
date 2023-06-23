@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import {readFileSync, writeFileSync} from "fs";
+const {readFileSync, writeFileSync} = require("node:fs");
 
 const replace = (_, p1, p2) => {
   if (p2 === ".") {
